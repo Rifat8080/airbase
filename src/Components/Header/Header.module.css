@@ -1,0 +1,45 @@
+.contanier {
+  padding: 10px;
+  padding-top: 1em;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(223, 69, 130);
+}
+
+.left_side {
+  display: flex;
+  align-items: center;
+}
+
+.left_side_size {
+  color: #fff;
+}
+
+.left_side_arrow {
+  color: #fff;
+  font-size: 2.6em;
+  cursor: pointer;
+}
+
+.left_side_text {
+  font-size: 1.7em;
+}
+
+.right_side {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon_gear {
+  font-size: 1.5em;
+}
+
+.button_style {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
