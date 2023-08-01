@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchField snapshot test 1`] = `
+<div
+  className="contianer"
+>
+  <h4
+    className="padh4"
+    data-testid="search"
+  >
+     
+    STATES BY COUNTRY
+     
+  </h4>
+  <div
+    className="grid"
+  >
+     
+  </div>
+</div>
+`;

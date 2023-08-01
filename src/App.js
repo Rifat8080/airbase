@@ -1,27 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import HeroSection from './Components/hero/HeroSection.js';
+import Header from './Components/Header/Header.js';
+import SearchField from './Components/searchSection/SearchField.js';
+import PollutionData from './Components/pollutionDataPage/PollutionData.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <HeroSection />
+      <Routes>
+        <Route exact path="/" element={<SearchField />} />
+        <Route exact path="/country/:id" element={<SearchField />} />
+        <Route path="/pollution/:id" element={<PollutionData />} />
+      </Routes>
     </div>
   );
 }
